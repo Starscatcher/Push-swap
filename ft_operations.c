@@ -1,6 +1,6 @@
 #include "ft_push_swap.h"
 
-t_stek    *ft_del_first(t_stek *stek)
+static	t_stek    *ft_del_first(t_stek *stek)
 {
     stek = stek->next;
 

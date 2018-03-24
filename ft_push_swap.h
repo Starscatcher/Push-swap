@@ -20,6 +20,7 @@ typedef struct      s_push
 }                   t_push;
 
 t_stek*             ft_makelst(void);
+int 				*ft_med(t_stek *stek);
 void                ft_rotate(t_push *push, char n);
 void                ft_push(t_push *push, char n);
 void                ft_pswap(t_push *push, char n);

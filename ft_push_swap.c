@@ -41,5 +41,5 @@ int     main(int argc, char **argv)
     push = (t_push*)malloc(sizeof(t_push));
     push->a = ft_read_args(argc, argv);
     push->b = NULL;
-    ft_reverse_rotate(push, 'a');
+	ft_med(push->a);
 }
