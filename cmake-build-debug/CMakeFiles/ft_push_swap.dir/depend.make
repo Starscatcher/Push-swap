@@ -5,6 +5,10 @@ CMakeFiles/ft_push_swap.dir/ft_find_med.c.o: .././libft/libft.h
 CMakeFiles/ft_push_swap.dir/ft_find_med.c.o: ../ft_find_med.c
 CMakeFiles/ft_push_swap.dir/ft_find_med.c.o: ../ft_push_swap.h
 
+CMakeFiles/ft_push_swap.dir/ft_heart.c.o: .././libft/libft.h
+CMakeFiles/ft_push_swap.dir/ft_heart.c.o: ../ft_heart.c
+CMakeFiles/ft_push_swap.dir/ft_heart.c.o: ../ft_push_swap.h
+
 CMakeFiles/ft_push_swap.dir/ft_operations.c.o: .././libft/libft.h
 CMakeFiles/ft_push_swap.dir/ft_operations.c.o: ../ft_operations.c
 CMakeFiles/ft_push_swap.dir/ft_operations.c.o: ../ft_push_swap.h

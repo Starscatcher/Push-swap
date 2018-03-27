@@ -1,17 +1,14 @@
 
 #include "ft_push_swap.h"
 
-static	int 	ft_is_sort(char *arr)
+int 	ft_stek_sort(t_stek *stek)
 {
-	int	i;
-
-	i = 0;
-	while(arr[i + 1])
+	while (stek && stek->next)
 	{
-		if (arr[i] > arr[i + 1])
+		if (stek->num > stek->next->num)
 			return (0);
 		else
-			i++;
+			stek = stek->next;
 	}
 	return (1);
 }
@@ -55,13 +52,25 @@ static	char 	*ft_make_arr(t_stek *stek)
 	return (arr);
 }
 
-int 	*ft_med(t_stek *stek)
+int 	ft_new_med(int *med, int *secmed, t_push *push)
+{
+	t_count *new;
+
+	new = ft_make_count();
+	new->next = push->count;
+	push->count = new;
+	*med = ft_med(push->a, 2);
+	*secmed = ft_med(push->a, 4);
+	return (1);
+}
+
+int 	ft_med(t_stek *stek, int num)
 {
 	char 	*arr;
-	int 	med;
+	char 	med;
 
 	arr = ft_make_arr(stek);
-	med = arr[ft_strlen(arr) / 2] - '0';
+	med = arr[ft_strlen(arr) / num] - '0';
 	ft_strdel(&arr);
 	return (med);
 }

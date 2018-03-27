@@ -66,10 +66,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_push_swap.dir/libft/ft_tolower.c.o"
   "CMakeFiles/ft_push_swap.dir/libft/ft_toupper.c.o"
   "CMakeFiles/ft_push_swap.dir/libft/get_next_line.c.o"
-  "CMakeFiles/ft_push_swap.dir/ft_operations.c.o"
-  "CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o"
   "CMakeFiles/ft_push_swap.dir/ft_find_med.c.o"
   "CMakeFiles/ft_push_swap.dir/ft_heart.c.o"
+  "CMakeFiles/ft_push_swap.dir/ft_operations.c.o"
+  "CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o"
   "ft_push_swap.pdb"
   "ft_push_swap"
 )

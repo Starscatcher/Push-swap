@@ -72,6 +72,8 @@ add_executable(ft_push_swap
         libft/ft_toupper.c
         libft/get_next_line.c
         libft/libft.h
+        ft_find_med.c
+        ft_heart.c
         ft_operations.c
         ft_push_swap.c
-        ft_push_swap.h ft_find_med.c ft_heart.c)
+        ft_push_swap.h)

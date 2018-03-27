@@ -6,14 +6,15 @@ static	t_stek    *ft_del_first(t_stek *stek)
 
     free(stek->prev);
     stek->prev = NULL;
+	return (stek);
 }
 
 void     ft_push(t_push *push, char n)
 {
     if (n == 'a' && push->b)
     {
-        if (!push->b)
-            push->b = ft_makelst();
+        if (!push->a)
+            push->a = ft_makelst();
         else
         {
             push->a->prev = ft_makelst();
@@ -75,7 +76,7 @@ void    ft_rotate(t_push *push, char n)
     else if (n == 'b' && push->b && push->b->next)
     {
         c = push->b->num;
-        while (push->a->next)
+        while (push->b->next)
         {
             push->b->num = push->b->next->num;
             push->b = push->b->next;

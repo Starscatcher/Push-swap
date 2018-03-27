@@ -1665,57 +1665,9 @@ CMakeFiles/ft_push_swap.dir/libft/get_next_line.c.o.provides: CMakeFiles/ft_push
 CMakeFiles/ft_push_swap.dir/libft/get_next_line.c.o.provides.build: CMakeFiles/ft_push_swap.dir/libft/get_next_line.c.o
 
 
-CMakeFiles/ft_push_swap.dir/ft_operations.c.o: CMakeFiles/ft_push_swap.dir/flags.make
-CMakeFiles/ft_push_swap.dir/ft_operations.c.o: ../ft_operations.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ft_push_swap.dir/ft_operations.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_push_swap.dir/ft_operations.c.o   -c /Users/aryabenk/projects/ft_push_swap/ft_operations.c
-
-CMakeFiles/ft_push_swap.dir/ft_operations.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_push_swap.dir/ft_operations.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aryabenk/projects/ft_push_swap/ft_operations.c > CMakeFiles/ft_push_swap.dir/ft_operations.c.i
-
-CMakeFiles/ft_push_swap.dir/ft_operations.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_push_swap.dir/ft_operations.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aryabenk/projects/ft_push_swap/ft_operations.c -o CMakeFiles/ft_push_swap.dir/ft_operations.c.s
-
-CMakeFiles/ft_push_swap.dir/ft_operations.c.o.requires:
-
-.PHONY : CMakeFiles/ft_push_swap.dir/ft_operations.c.o.requires
-
-CMakeFiles/ft_push_swap.dir/ft_operations.c.o.provides: CMakeFiles/ft_push_swap.dir/ft_operations.c.o.requires
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_operations.c.o.provides.build
-.PHONY : CMakeFiles/ft_push_swap.dir/ft_operations.c.o.provides
-
-CMakeFiles/ft_push_swap.dir/ft_operations.c.o.provides.build: CMakeFiles/ft_push_swap.dir/ft_operations.c.o
-
-
-CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o: CMakeFiles/ft_push_swap.dir/flags.make
-CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o: ../ft_push_swap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o   -c /Users/aryabenk/projects/ft_push_swap/ft_push_swap.c
-
-CMakeFiles/ft_push_swap.dir/ft_push_swap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_push_swap.dir/ft_push_swap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aryabenk/projects/ft_push_swap/ft_push_swap.c > CMakeFiles/ft_push_swap.dir/ft_push_swap.c.i
-
-CMakeFiles/ft_push_swap.dir/ft_push_swap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_push_swap.dir/ft_push_swap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aryabenk/projects/ft_push_swap/ft_push_swap.c -o CMakeFiles/ft_push_swap.dir/ft_push_swap.c.s
-
-CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.requires:
-
-.PHONY : CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.requires
-
-CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.provides: CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.requires
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.provides.build
-.PHONY : CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.provides
-
-CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.provides.build: CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o
-
-
 CMakeFiles/ft_push_swap.dir/ft_find_med.c.o: CMakeFiles/ft_push_swap.dir/flags.make
 CMakeFiles/ft_push_swap.dir/ft_find_med.c.o: ../ft_find_med.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ft_push_swap.dir/ft_find_med.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ft_push_swap.dir/ft_find_med.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_push_swap.dir/ft_find_med.c.o   -c /Users/aryabenk/projects/ft_push_swap/ft_find_med.c
 
 CMakeFiles/ft_push_swap.dir/ft_find_med.c.i: cmake_force
@@ -1739,7 +1691,7 @@ CMakeFiles/ft_push_swap.dir/ft_find_med.c.o.provides.build: CMakeFiles/ft_push_s
 
 CMakeFiles/ft_push_swap.dir/ft_heart.c.o: CMakeFiles/ft_push_swap.dir/flags.make
 CMakeFiles/ft_push_swap.dir/ft_heart.c.o: ../ft_heart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ft_push_swap.dir/ft_heart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ft_push_swap.dir/ft_heart.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_push_swap.dir/ft_heart.c.o   -c /Users/aryabenk/projects/ft_push_swap/ft_heart.c
 
 CMakeFiles/ft_push_swap.dir/ft_heart.c.i: cmake_force
@@ -1759,6 +1711,54 @@ CMakeFiles/ft_push_swap.dir/ft_heart.c.o.provides: CMakeFiles/ft_push_swap.dir/f
 .PHONY : CMakeFiles/ft_push_swap.dir/ft_heart.c.o.provides
 
 CMakeFiles/ft_push_swap.dir/ft_heart.c.o.provides.build: CMakeFiles/ft_push_swap.dir/ft_heart.c.o
+
+
+CMakeFiles/ft_push_swap.dir/ft_operations.c.o: CMakeFiles/ft_push_swap.dir/flags.make
+CMakeFiles/ft_push_swap.dir/ft_operations.c.o: ../ft_operations.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ft_push_swap.dir/ft_operations.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_push_swap.dir/ft_operations.c.o   -c /Users/aryabenk/projects/ft_push_swap/ft_operations.c
+
+CMakeFiles/ft_push_swap.dir/ft_operations.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_push_swap.dir/ft_operations.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aryabenk/projects/ft_push_swap/ft_operations.c > CMakeFiles/ft_push_swap.dir/ft_operations.c.i
+
+CMakeFiles/ft_push_swap.dir/ft_operations.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_push_swap.dir/ft_operations.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aryabenk/projects/ft_push_swap/ft_operations.c -o CMakeFiles/ft_push_swap.dir/ft_operations.c.s
+
+CMakeFiles/ft_push_swap.dir/ft_operations.c.o.requires:
+
+.PHONY : CMakeFiles/ft_push_swap.dir/ft_operations.c.o.requires
+
+CMakeFiles/ft_push_swap.dir/ft_operations.c.o.provides: CMakeFiles/ft_push_swap.dir/ft_operations.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_operations.c.o.provides.build
+.PHONY : CMakeFiles/ft_push_swap.dir/ft_operations.c.o.provides
+
+CMakeFiles/ft_push_swap.dir/ft_operations.c.o.provides.build: CMakeFiles/ft_push_swap.dir/ft_operations.c.o
+
+
+CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o: CMakeFiles/ft_push_swap.dir/flags.make
+CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o: ../ft_push_swap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o   -c /Users/aryabenk/projects/ft_push_swap/ft_push_swap.c
+
+CMakeFiles/ft_push_swap.dir/ft_push_swap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_push_swap.dir/ft_push_swap.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aryabenk/projects/ft_push_swap/ft_push_swap.c > CMakeFiles/ft_push_swap.dir/ft_push_swap.c.i
+
+CMakeFiles/ft_push_swap.dir/ft_push_swap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_push_swap.dir/ft_push_swap.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aryabenk/projects/ft_push_swap/ft_push_swap.c -o CMakeFiles/ft_push_swap.dir/ft_push_swap.c.s
+
+CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.requires:
+
+.PHONY : CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.requires
+
+CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.provides: CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.provides.build
+.PHONY : CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.provides
+
+CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.provides.build: CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o
 
 
 # Object files for target ft_push_swap
@@ -1830,10 +1830,10 @@ ft_push_swap_OBJECTS = \
 "CMakeFiles/ft_push_swap.dir/libft/ft_tolower.c.o" \
 "CMakeFiles/ft_push_swap.dir/libft/ft_toupper.c.o" \
 "CMakeFiles/ft_push_swap.dir/libft/get_next_line.c.o" \
-"CMakeFiles/ft_push_swap.dir/ft_operations.c.o" \
-"CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o" \
 "CMakeFiles/ft_push_swap.dir/ft_find_med.c.o" \
-"CMakeFiles/ft_push_swap.dir/ft_heart.c.o"
+"CMakeFiles/ft_push_swap.dir/ft_heart.c.o" \
+"CMakeFiles/ft_push_swap.dir/ft_operations.c.o" \
+"CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o"
 
 # External object files for target ft_push_swap
 ft_push_swap_EXTERNAL_OBJECTS =
@@ -1905,10 +1905,10 @@ ft_push_swap: CMakeFiles/ft_push_swap.dir/libft/ft_swap.c.o
 ft_push_swap: CMakeFiles/ft_push_swap.dir/libft/ft_tolower.c.o
 ft_push_swap: CMakeFiles/ft_push_swap.dir/libft/ft_toupper.c.o
 ft_push_swap: CMakeFiles/ft_push_swap.dir/libft/get_next_line.c.o
-ft_push_swap: CMakeFiles/ft_push_swap.dir/ft_operations.c.o
-ft_push_swap: CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o
 ft_push_swap: CMakeFiles/ft_push_swap.dir/ft_find_med.c.o
 ft_push_swap: CMakeFiles/ft_push_swap.dir/ft_heart.c.o
+ft_push_swap: CMakeFiles/ft_push_swap.dir/ft_operations.c.o
+ft_push_swap: CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o
 ft_push_swap: CMakeFiles/ft_push_swap.dir/build.make
 ft_push_swap: CMakeFiles/ft_push_swap.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Linking C executable ft_push_swap"
@@ -1986,10 +1986,10 @@ CMakeFiles/ft_push_swap.dir/requires: CMakeFiles/ft_push_swap.dir/libft/ft_swap.
 CMakeFiles/ft_push_swap.dir/requires: CMakeFiles/ft_push_swap.dir/libft/ft_tolower.c.o.requires
 CMakeFiles/ft_push_swap.dir/requires: CMakeFiles/ft_push_swap.dir/libft/ft_toupper.c.o.requires
 CMakeFiles/ft_push_swap.dir/requires: CMakeFiles/ft_push_swap.dir/libft/get_next_line.c.o.requires
-CMakeFiles/ft_push_swap.dir/requires: CMakeFiles/ft_push_swap.dir/ft_operations.c.o.requires
-CMakeFiles/ft_push_swap.dir/requires: CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.requires
 CMakeFiles/ft_push_swap.dir/requires: CMakeFiles/ft_push_swap.dir/ft_find_med.c.o.requires
 CMakeFiles/ft_push_swap.dir/requires: CMakeFiles/ft_push_swap.dir/ft_heart.c.o.requires
+CMakeFiles/ft_push_swap.dir/requires: CMakeFiles/ft_push_swap.dir/ft_operations.c.o.requires
+CMakeFiles/ft_push_swap.dir/requires: CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o.requires
 
 .PHONY : CMakeFiles/ft_push_swap.dir/requires
 
