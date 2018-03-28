@@ -2,11 +2,18 @@
 
 static	t_stek    *ft_del_first(t_stek *stek)
 {
-    stek = stek->next;
-
-    free(stek->prev);
-    stek->prev = NULL;
-	return (stek);
+	if (stek->next)
+	{
+		stek = stek->next;
+    	free(stek->prev);
+    	stek->prev = NULL;
+		return (stek);
+	}
+	else
+	{
+		free(stek);
+		return (NULL);
+	}
 }
 
 void     ft_push(t_push *push, char n)

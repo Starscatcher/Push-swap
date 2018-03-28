@@ -15,7 +15,8 @@ typedef struct		s_stek
 
 typedef struct      s_count
 {
-  	int 		len;
+  	int 	len;
+    int 	rb;
     struct 	s_count   *next;
 }                   t_count;
 
@@ -26,13 +27,15 @@ typedef struct      s_push
     t_count *count;
 }                   t_push;
 
-int 				ft_is_sort(char *arr);
+void				ft_new_count(t_push *push);
+int 				ft_sort(t_push *push);
+int 				ft_is_sort(int *arr, int size);
 t_count				*ft_make_count(void);
 int 				ft_stek_sort(t_stek *stek);
-int 				ft_new_med(int *med, int *secmed, t_push *push);
+int 				ft_new_med(int *med, t_push *push);
 void				ft_push_b(t_push *push, int med);
 t_stek*             ft_makelst(void);
-int					ft_med(t_stek *stek, int num);
+int					ft_med(t_stek *stek, int num, int where);
 void                ft_rotate(t_push *push, char n);
 void                ft_push(t_push *push, char n);
 void                ft_pswap(t_push *push, char n);

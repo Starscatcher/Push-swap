@@ -34,20 +34,6 @@ t_stek*     ft_read_args(int argc, char **argv)
     return (node);
 }
 
-int 	ft_is_sort(char *arr)
-{
-	int	i;
-
-	i = 0;
-	while(arr[i + 1])
-	{
-		if (arr[i] > arr[i + 1])
-			return (0);
-		else
-			i++;
-	}
-	return (1);
-}
 
 int     main(int argc, char **argv)
 {
@@ -57,6 +43,5 @@ int     main(int argc, char **argv)
     push = (t_push*)malloc(sizeof(t_push));
     push->a = ft_read_args(argc, argv);
     push->b = NULL;
-	med = ft_med(push->a, 2);
-	ft_push_b(push, med);
+	ft_sort(push);
 }
