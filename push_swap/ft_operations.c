@@ -44,6 +44,9 @@ void     ft_push(t_push *push, char n)
         push->b->num = push->a->num;
         push->a = ft_del_first(push->a);
     }
+	push->command = ft_realloc(push->command, ft_strlen(push->command) + 3);
+	push->command = n == 'a' ? ft_strcat(push->command, "pa\n") : ft_strcat(push->command, "pb\n");
+	push->fin++;
 }
 
 void    ft_pswap(t_push *push, char n)
@@ -55,6 +58,8 @@ void    ft_pswap(t_push *push, char n)
         r = push->a->num;
         push->a->num = push->a->next->num;
         push->a->next->num = r;
+		if (push->b && push->b->next && push->b->num < push->b->next->num)
+			ft_pswap(push, 'b');
     }
     else if (n == 'b' && push->b->next)
     {
@@ -62,6 +67,9 @@ void    ft_pswap(t_push *push, char n)
         push->b->num = push->b->next->num;
         push->b->next->num = r;
     }
+	push->command = ft_realloc(push->command, ft_strlen(push->command) + 3);
+	push->command = n == 'a' ? ft_strcat(push->command, "sa\n") : ft_strcat(push->command, "sb\n");
+	push->fin++;
 }
 
 void    ft_rotate(t_push *push, char n)
@@ -92,6 +100,9 @@ void    ft_rotate(t_push *push, char n)
         while(push->b->prev)
             push->b = push->b->prev;
     }
+	push->command = ft_realloc(push->command, ft_strlen(push->command) + 3);
+	push->command = n == 'a' ? ft_strcat(push->command, "ra\n") : ft_strcat(push->command, "rb\n");
+	push->fin++;
 }
 
 void    ft_reverse_rotate(t_push *push, char n)
@@ -109,6 +120,11 @@ void    ft_reverse_rotate(t_push *push, char n)
             push->a = push->a->prev;
         }
         push->a->num = c;
+		if (push->count->rb)
+		{
+			push->count->rb--;
+			ft_reverse_rotate(push, 'b');
+		}
     }
     else if (n == 'b' && push->b && push->b->next)
     {
@@ -122,4 +138,7 @@ void    ft_reverse_rotate(t_push *push, char n)
         }
         push->b->num = c;
     }
+	push->command = ft_realloc(push->command, ft_strlen(push->command) + 4);
+	push->command = n == 'a' ? ft_strcat(push->command, "rra\n") : ft_strcat(push->command, "rrb\n");
+	push->fin++;
 }

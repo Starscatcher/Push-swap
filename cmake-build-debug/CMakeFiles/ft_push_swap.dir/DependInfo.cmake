@@ -4,10 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/aryabenk/projects/ft_push_swap/ft_find_med.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/ft_find_med.c.o"
-  "/Users/aryabenk/projects/ft_push_swap/ft_heart.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/ft_heart.c.o"
-  "/Users/aryabenk/projects/ft_push_swap/ft_operations.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/ft_operations.c.o"
-  "/Users/aryabenk/projects/ft_push_swap/ft_push_swap.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o"
   "/Users/aryabenk/projects/ft_push_swap/libft/ft_atoi.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/libft/ft_atoi.c.o"
   "/Users/aryabenk/projects/ft_push_swap/libft/ft_bzero.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/libft/ft_bzero.c.o"
   "/Users/aryabenk/projects/ft_push_swap/libft/ft_char_replace.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/libft/ft_char_replace.c.o"
@@ -75,6 +71,14 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/aryabenk/projects/ft_push_swap/libft/ft_tolower.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/libft/ft_tolower.c.o"
   "/Users/aryabenk/projects/ft_push_swap/libft/ft_toupper.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/libft/ft_toupper.c.o"
   "/Users/aryabenk/projects/ft_push_swap/libft/get_next_line.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/libft/get_next_line.c.o"
+  "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_check.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_check.c.o"
+  "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_check_commands.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_check_commands.c.o"
+  "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_find_med.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_find_med.c.o"
+  "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_heart.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_heart.c.o"
+  "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_lst.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_lst.c.o"
+  "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_operations.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_operations.c.o"
+  "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_push_swap.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_push_swap.c.o"
+  "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_three_sort.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_three_sort.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

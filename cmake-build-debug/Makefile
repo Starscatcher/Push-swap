@@ -123,114 +123,6 @@ ft_push_swap/fast:
 	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/build
 .PHONY : ft_push_swap/fast
 
-ft_find_med.o: ft_find_med.c.o
-
-.PHONY : ft_find_med.o
-
-# target to build an object file
-ft_find_med.c.o:
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_find_med.c.o
-.PHONY : ft_find_med.c.o
-
-ft_find_med.i: ft_find_med.c.i
-
-.PHONY : ft_find_med.i
-
-# target to preprocess a source file
-ft_find_med.c.i:
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_find_med.c.i
-.PHONY : ft_find_med.c.i
-
-ft_find_med.s: ft_find_med.c.s
-
-.PHONY : ft_find_med.s
-
-# target to generate assembly for a file
-ft_find_med.c.s:
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_find_med.c.s
-.PHONY : ft_find_med.c.s
-
-ft_heart.o: ft_heart.c.o
-
-.PHONY : ft_heart.o
-
-# target to build an object file
-ft_heart.c.o:
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_heart.c.o
-.PHONY : ft_heart.c.o
-
-ft_heart.i: ft_heart.c.i
-
-.PHONY : ft_heart.i
-
-# target to preprocess a source file
-ft_heart.c.i:
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_heart.c.i
-.PHONY : ft_heart.c.i
-
-ft_heart.s: ft_heart.c.s
-
-.PHONY : ft_heart.s
-
-# target to generate assembly for a file
-ft_heart.c.s:
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_heart.c.s
-.PHONY : ft_heart.c.s
-
-ft_operations.o: ft_operations.c.o
-
-.PHONY : ft_operations.o
-
-# target to build an object file
-ft_operations.c.o:
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_operations.c.o
-.PHONY : ft_operations.c.o
-
-ft_operations.i: ft_operations.c.i
-
-.PHONY : ft_operations.i
-
-# target to preprocess a source file
-ft_operations.c.i:
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_operations.c.i
-.PHONY : ft_operations.c.i
-
-ft_operations.s: ft_operations.c.s
-
-.PHONY : ft_operations.s
-
-# target to generate assembly for a file
-ft_operations.c.s:
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_operations.c.s
-.PHONY : ft_operations.c.s
-
-ft_push_swap.o: ft_push_swap.c.o
-
-.PHONY : ft_push_swap.o
-
-# target to build an object file
-ft_push_swap.c.o:
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_push_swap.c.o
-.PHONY : ft_push_swap.c.o
-
-ft_push_swap.i: ft_push_swap.c.i
-
-.PHONY : ft_push_swap.i
-
-# target to preprocess a source file
-ft_push_swap.c.i:
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_push_swap.c.i
-.PHONY : ft_push_swap.c.i
-
-ft_push_swap.s: ft_push_swap.c.s
-
-.PHONY : ft_push_swap.s
-
-# target to generate assembly for a file
-ft_push_swap.c.s:
-	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/ft_push_swap.c.s
-.PHONY : ft_push_swap.c.s
-
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -2040,6 +1932,222 @@ libft/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/libft/get_next_line.c.s
 .PHONY : libft/get_next_line.c.s
 
+push_swap/ft_check.o: push_swap/ft_check.c.o
+
+.PHONY : push_swap/ft_check.o
+
+# target to build an object file
+push_swap/ft_check.c.o:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_check.c.o
+.PHONY : push_swap/ft_check.c.o
+
+push_swap/ft_check.i: push_swap/ft_check.c.i
+
+.PHONY : push_swap/ft_check.i
+
+# target to preprocess a source file
+push_swap/ft_check.c.i:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_check.c.i
+.PHONY : push_swap/ft_check.c.i
+
+push_swap/ft_check.s: push_swap/ft_check.c.s
+
+.PHONY : push_swap/ft_check.s
+
+# target to generate assembly for a file
+push_swap/ft_check.c.s:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_check.c.s
+.PHONY : push_swap/ft_check.c.s
+
+push_swap/ft_check_commands.o: push_swap/ft_check_commands.c.o
+
+.PHONY : push_swap/ft_check_commands.o
+
+# target to build an object file
+push_swap/ft_check_commands.c.o:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_check_commands.c.o
+.PHONY : push_swap/ft_check_commands.c.o
+
+push_swap/ft_check_commands.i: push_swap/ft_check_commands.c.i
+
+.PHONY : push_swap/ft_check_commands.i
+
+# target to preprocess a source file
+push_swap/ft_check_commands.c.i:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_check_commands.c.i
+.PHONY : push_swap/ft_check_commands.c.i
+
+push_swap/ft_check_commands.s: push_swap/ft_check_commands.c.s
+
+.PHONY : push_swap/ft_check_commands.s
+
+# target to generate assembly for a file
+push_swap/ft_check_commands.c.s:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_check_commands.c.s
+.PHONY : push_swap/ft_check_commands.c.s
+
+push_swap/ft_find_med.o: push_swap/ft_find_med.c.o
+
+.PHONY : push_swap/ft_find_med.o
+
+# target to build an object file
+push_swap/ft_find_med.c.o:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_find_med.c.o
+.PHONY : push_swap/ft_find_med.c.o
+
+push_swap/ft_find_med.i: push_swap/ft_find_med.c.i
+
+.PHONY : push_swap/ft_find_med.i
+
+# target to preprocess a source file
+push_swap/ft_find_med.c.i:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_find_med.c.i
+.PHONY : push_swap/ft_find_med.c.i
+
+push_swap/ft_find_med.s: push_swap/ft_find_med.c.s
+
+.PHONY : push_swap/ft_find_med.s
+
+# target to generate assembly for a file
+push_swap/ft_find_med.c.s:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_find_med.c.s
+.PHONY : push_swap/ft_find_med.c.s
+
+push_swap/ft_heart.o: push_swap/ft_heart.c.o
+
+.PHONY : push_swap/ft_heart.o
+
+# target to build an object file
+push_swap/ft_heart.c.o:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_heart.c.o
+.PHONY : push_swap/ft_heart.c.o
+
+push_swap/ft_heart.i: push_swap/ft_heart.c.i
+
+.PHONY : push_swap/ft_heart.i
+
+# target to preprocess a source file
+push_swap/ft_heart.c.i:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_heart.c.i
+.PHONY : push_swap/ft_heart.c.i
+
+push_swap/ft_heart.s: push_swap/ft_heart.c.s
+
+.PHONY : push_swap/ft_heart.s
+
+# target to generate assembly for a file
+push_swap/ft_heart.c.s:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_heart.c.s
+.PHONY : push_swap/ft_heart.c.s
+
+push_swap/ft_lst.o: push_swap/ft_lst.c.o
+
+.PHONY : push_swap/ft_lst.o
+
+# target to build an object file
+push_swap/ft_lst.c.o:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_lst.c.o
+.PHONY : push_swap/ft_lst.c.o
+
+push_swap/ft_lst.i: push_swap/ft_lst.c.i
+
+.PHONY : push_swap/ft_lst.i
+
+# target to preprocess a source file
+push_swap/ft_lst.c.i:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_lst.c.i
+.PHONY : push_swap/ft_lst.c.i
+
+push_swap/ft_lst.s: push_swap/ft_lst.c.s
+
+.PHONY : push_swap/ft_lst.s
+
+# target to generate assembly for a file
+push_swap/ft_lst.c.s:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_lst.c.s
+.PHONY : push_swap/ft_lst.c.s
+
+push_swap/ft_operations.o: push_swap/ft_operations.c.o
+
+.PHONY : push_swap/ft_operations.o
+
+# target to build an object file
+push_swap/ft_operations.c.o:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_operations.c.o
+.PHONY : push_swap/ft_operations.c.o
+
+push_swap/ft_operations.i: push_swap/ft_operations.c.i
+
+.PHONY : push_swap/ft_operations.i
+
+# target to preprocess a source file
+push_swap/ft_operations.c.i:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_operations.c.i
+.PHONY : push_swap/ft_operations.c.i
+
+push_swap/ft_operations.s: push_swap/ft_operations.c.s
+
+.PHONY : push_swap/ft_operations.s
+
+# target to generate assembly for a file
+push_swap/ft_operations.c.s:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_operations.c.s
+.PHONY : push_swap/ft_operations.c.s
+
+push_swap/ft_push_swap.o: push_swap/ft_push_swap.c.o
+
+.PHONY : push_swap/ft_push_swap.o
+
+# target to build an object file
+push_swap/ft_push_swap.c.o:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_push_swap.c.o
+.PHONY : push_swap/ft_push_swap.c.o
+
+push_swap/ft_push_swap.i: push_swap/ft_push_swap.c.i
+
+.PHONY : push_swap/ft_push_swap.i
+
+# target to preprocess a source file
+push_swap/ft_push_swap.c.i:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_push_swap.c.i
+.PHONY : push_swap/ft_push_swap.c.i
+
+push_swap/ft_push_swap.s: push_swap/ft_push_swap.c.s
+
+.PHONY : push_swap/ft_push_swap.s
+
+# target to generate assembly for a file
+push_swap/ft_push_swap.c.s:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_push_swap.c.s
+.PHONY : push_swap/ft_push_swap.c.s
+
+push_swap/ft_three_sort.o: push_swap/ft_three_sort.c.o
+
+.PHONY : push_swap/ft_three_sort.o
+
+# target to build an object file
+push_swap/ft_three_sort.c.o:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_three_sort.c.o
+.PHONY : push_swap/ft_three_sort.c.o
+
+push_swap/ft_three_sort.i: push_swap/ft_three_sort.c.i
+
+.PHONY : push_swap/ft_three_sort.i
+
+# target to preprocess a source file
+push_swap/ft_three_sort.c.i:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_three_sort.c.i
+.PHONY : push_swap/ft_three_sort.c.i
+
+push_swap/ft_three_sort.s: push_swap/ft_three_sort.c.s
+
+.PHONY : push_swap/ft_three_sort.s
+
+# target to generate assembly for a file
+push_swap/ft_three_sort.c.s:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_three_sort.c.s
+.PHONY : push_swap/ft_three_sort.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2049,18 +2157,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ft_push_swap"
-	@echo "... ft_find_med.o"
-	@echo "... ft_find_med.i"
-	@echo "... ft_find_med.s"
-	@echo "... ft_heart.o"
-	@echo "... ft_heart.i"
-	@echo "... ft_heart.s"
-	@echo "... ft_operations.o"
-	@echo "... ft_operations.i"
-	@echo "... ft_operations.s"
-	@echo "... ft_push_swap.o"
-	@echo "... ft_push_swap.i"
-	@echo "... ft_push_swap.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -2262,6 +2358,30 @@ help:
 	@echo "... libft/get_next_line.o"
 	@echo "... libft/get_next_line.i"
 	@echo "... libft/get_next_line.s"
+	@echo "... push_swap/ft_check.o"
+	@echo "... push_swap/ft_check.i"
+	@echo "... push_swap/ft_check.s"
+	@echo "... push_swap/ft_check_commands.o"
+	@echo "... push_swap/ft_check_commands.i"
+	@echo "... push_swap/ft_check_commands.s"
+	@echo "... push_swap/ft_find_med.o"
+	@echo "... push_swap/ft_find_med.i"
+	@echo "... push_swap/ft_find_med.s"
+	@echo "... push_swap/ft_heart.o"
+	@echo "... push_swap/ft_heart.i"
+	@echo "... push_swap/ft_heart.s"
+	@echo "... push_swap/ft_lst.o"
+	@echo "... push_swap/ft_lst.i"
+	@echo "... push_swap/ft_lst.s"
+	@echo "... push_swap/ft_operations.o"
+	@echo "... push_swap/ft_operations.i"
+	@echo "... push_swap/ft_operations.s"
+	@echo "... push_swap/ft_push_swap.o"
+	@echo "... push_swap/ft_push_swap.i"
+	@echo "... push_swap/ft_push_swap.s"
+	@echo "... push_swap/ft_three_sort.o"
+	@echo "... push_swap/ft_three_sort.i"
+	@echo "... push_swap/ft_three_sort.s"
 .PHONY : help
 
 

@@ -1,20 +1,4 @@
-
 #include "ft_push_swap.h"
-
-int 	ft_is_sort(int *arr, int size)
-{
-	int	i;
-
-	i = 0;
-	while(i + 1 < size)
-	{
-		if (arr[i] > arr[i + 1])
-			return (0);
-		else
-			i++;
-	}
-	return (1);
-}
 
 static	int 	*ft_sort_arr(int *arr, int size)
 {
@@ -22,7 +6,7 @@ static	int 	*ft_sort_arr(int *arr, int size)
 	int		i;
 
 	i = 0;
-	while (!ft_is_sort(arr, size))
+	while (!ft_check_sort_arr(arr, size))
 	{
 		if (i + 1 == size)
 			i = 0;
@@ -78,15 +62,6 @@ static	int 	*ft_make_arr(t_stek *stek, int where, int *size)
 	}
 }
 
-void	ft_new_count(t_push *push)
-{
-	t_count *new;
-
-	new = ft_make_count();
-	new->next = push->count;
-	push->count = new;
-}
-
 int 	ft_new_med(int *med, t_push *push)
 {
 	ft_new_count(push);
@@ -97,8 +72,8 @@ int 	ft_new_med(int *med, t_push *push)
 int 	ft_med(t_stek *stek, int num, int where)
 {
 	int 	*arr;
-	char 	med;
-	int size;
+	int 	med;
+	int 	size;
 
 	arr = ft_make_arr(stek, where, &size);
 	med = arr[size / num];

@@ -1,20 +1,8 @@
 #include "ft_push_swap.h"
 
-t_stek*  ft_makelst(void)
-{
-    t_stek *stek;
-
-    stek = (t_stek*)malloc(sizeof(t_stek));
-    stek->prev = NULL;
-    stek->next = NULL;
-    stek->num = 0;
-    return (stek);
-}
-
 t_stek*     ft_read_args(int argc, char **argv)
 {
     int i;
-    int j;
     t_stek *stek;
     t_stek *node;
 
@@ -34,7 +22,6 @@ t_stek*     ft_read_args(int argc, char **argv)
     return (node);
 }
 
-
 int     main(int argc, char **argv)
 {
     t_push *push;
@@ -44,4 +31,7 @@ int     main(int argc, char **argv)
     push->a = ft_read_args(argc, argv);
     push->b = NULL;
 	ft_sort(push);
+    ft_rewrite_commands(push);
+    int fd = open("../1", O_RDWR);
+    ft_putstr_fd(push->command, fd);
 }

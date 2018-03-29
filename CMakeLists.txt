@@ -72,8 +72,12 @@ add_executable(ft_push_swap
         libft/ft_toupper.c
         libft/get_next_line.c
         libft/libft.h
-        ft_find_med.c
-        ft_heart.c
-        ft_operations.c
-        ft_push_swap.c
-        ft_push_swap.h)
+        push_swap/ft_check.c
+        push_swap/ft_check_commands.c
+        push_swap/ft_find_med.c
+        push_swap/ft_heart.c
+        push_swap/ft_lst.c
+        push_swap/ft_operations.c
+        push_swap/ft_push_swap.c
+        push_swap/ft_push_swap.h
+        push_swap/ft_three_sort.c)
