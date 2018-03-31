@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/aryabenk/projects/ft_push_swap/checker/ft_check_operations.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/checker/ft_check_operations.c.o"
+  "/Users/aryabenk/projects/ft_push_swap/checker/ft_read.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/checker/ft_read.c.o"
   "/Users/aryabenk/projects/ft_push_swap/libft/ft_atoi.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/libft/ft_atoi.c.o"
   "/Users/aryabenk/projects/ft_push_swap/libft/ft_bzero.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/libft/ft_bzero.c.o"
   "/Users/aryabenk/projects/ft_push_swap/libft/ft_char_replace.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/libft/ft_char_replace.c.o"
@@ -78,6 +80,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_lst.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_lst.c.o"
   "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_operations.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_operations.c.o"
   "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_push_swap.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_push_swap.c.o"
+  "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_rotate_and_reverse.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_rotate_and_reverse.c.o"
+  "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_stek_a.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_stek_a.c.o"
   "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_three_sort.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_three_sort.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

@@ -1,9 +1,42 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_find_med.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aryabenk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 13:51:35 by aryabenk          #+#    #+#             */
+/*   Updated: 2018/03/31 13:51:35 by aryabenk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_push_swap.h"
 
-static	int 	*ft_sort_arr(int *arr, int size)
+int			ft_find_error(t_stek *stek)
 {
-	int 	swap;
-	int		i;
+	t_stek *copy;
+
+	while (stek)
+	{
+		copy = stek->next;
+		while (copy)
+		{
+			if (copy->num == stek->num)
+			{
+				printf("Error");
+				exit(1);
+			}
+			copy = copy->next;
+		}
+		stek = stek->next;
+	}
+	return (0);
+}
+
+static	int	*ft_sort_arr(int *arr, int size, t_stek *stek)
+{
+	int	swap;
+	int	i;
 
 	i = 0;
 	while (!ft_check_sort_arr(arr, size))
@@ -21,59 +54,38 @@ static	int 	*ft_sort_arr(int *arr, int size)
 	return (arr);
 }
 
-static	int 	*ft_make_arr(t_stek *stek, int where, int *size)
+static	int	*ft_make_arr(t_stek *stek, int where, int *size)
 {
 	int	*arr;
-	int		i;
-	int 	len;
+	int	i;
+	int len;
 
 	i = 0;
-	if (where < 0)
+	len = !where ? ft_lstlen(stek) : where;
+	*size = len;
+	arr = (int*)malloc(sizeof(int) * *size);
+	while (stek && len > 0)
 	{
-		len = ft_lstlen(stek) + where;
-		while (len > 0)
-		{
-			stek = stek->next;
-			len--;
-		}
-		*size = -where;
-		arr = (int*)malloc(sizeof(int) * *size);
-		while(stek)
-		{
-			arr[i++] = stek->num;
-			stek = stek->next;
-		}
-		arr = ft_sort_arr(arr, size);
-		return (arr);
+		arr[i++] = stek->num;
+		stek = stek->next;
+		len--;
 	}
-	else
-	{
-		len = !where ? ft_lstlen(stek) : where;
-		*size = len;
-		arr = (int*)malloc(sizeof(int) * *size);
-		while (stek && len > 0)
-		{
-			arr[i++] = stek->num;
-			stek = stek->next;
-			len--;
-		}
-		arr = ft_sort_arr(arr, *size);
-		return (arr);
-	}
+	arr = ft_sort_arr(arr, *size, stek);
+	return (arr);
 }
 
-int 	ft_new_med(int *med, t_push *push)
+int			ft_new_med(int *med, t_push *push)
 {
 	ft_new_count(push);
 	*med = ft_med(push->a, 2, 0);
 	return (1);
 }
 
-int 	ft_med(t_stek *stek, int num, int where)
+int			ft_med(t_stek *stek, int num, int where)
 {
-	int 	*arr;
-	int 	med;
-	int 	size;
+	int *arr;
+	int med;
+	int size;
 
 	arr = ft_make_arr(stek, where, &size);
 	med = arr[size / num];

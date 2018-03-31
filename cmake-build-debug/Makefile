@@ -123,6 +123,60 @@ ft_push_swap/fast:
 	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/build
 .PHONY : ft_push_swap/fast
 
+checker/ft_check_operations.o: checker/ft_check_operations.c.o
+
+.PHONY : checker/ft_check_operations.o
+
+# target to build an object file
+checker/ft_check_operations.c.o:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/checker/ft_check_operations.c.o
+.PHONY : checker/ft_check_operations.c.o
+
+checker/ft_check_operations.i: checker/ft_check_operations.c.i
+
+.PHONY : checker/ft_check_operations.i
+
+# target to preprocess a source file
+checker/ft_check_operations.c.i:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/checker/ft_check_operations.c.i
+.PHONY : checker/ft_check_operations.c.i
+
+checker/ft_check_operations.s: checker/ft_check_operations.c.s
+
+.PHONY : checker/ft_check_operations.s
+
+# target to generate assembly for a file
+checker/ft_check_operations.c.s:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/checker/ft_check_operations.c.s
+.PHONY : checker/ft_check_operations.c.s
+
+checker/ft_read.o: checker/ft_read.c.o
+
+.PHONY : checker/ft_read.o
+
+# target to build an object file
+checker/ft_read.c.o:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/checker/ft_read.c.o
+.PHONY : checker/ft_read.c.o
+
+checker/ft_read.i: checker/ft_read.c.i
+
+.PHONY : checker/ft_read.i
+
+# target to preprocess a source file
+checker/ft_read.c.i:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/checker/ft_read.c.i
+.PHONY : checker/ft_read.c.i
+
+checker/ft_read.s: checker/ft_read.c.s
+
+.PHONY : checker/ft_read.s
+
+# target to generate assembly for a file
+checker/ft_read.c.s:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/checker/ft_read.c.s
+.PHONY : checker/ft_read.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -2121,6 +2175,60 @@ push_swap/ft_push_swap.c.s:
 	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_push_swap.c.s
 .PHONY : push_swap/ft_push_swap.c.s
 
+push_swap/ft_rotate_and_reverse.o: push_swap/ft_rotate_and_reverse.c.o
+
+.PHONY : push_swap/ft_rotate_and_reverse.o
+
+# target to build an object file
+push_swap/ft_rotate_and_reverse.c.o:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_rotate_and_reverse.c.o
+.PHONY : push_swap/ft_rotate_and_reverse.c.o
+
+push_swap/ft_rotate_and_reverse.i: push_swap/ft_rotate_and_reverse.c.i
+
+.PHONY : push_swap/ft_rotate_and_reverse.i
+
+# target to preprocess a source file
+push_swap/ft_rotate_and_reverse.c.i:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_rotate_and_reverse.c.i
+.PHONY : push_swap/ft_rotate_and_reverse.c.i
+
+push_swap/ft_rotate_and_reverse.s: push_swap/ft_rotate_and_reverse.c.s
+
+.PHONY : push_swap/ft_rotate_and_reverse.s
+
+# target to generate assembly for a file
+push_swap/ft_rotate_and_reverse.c.s:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_rotate_and_reverse.c.s
+.PHONY : push_swap/ft_rotate_and_reverse.c.s
+
+push_swap/ft_stek_a.o: push_swap/ft_stek_a.c.o
+
+.PHONY : push_swap/ft_stek_a.o
+
+# target to build an object file
+push_swap/ft_stek_a.c.o:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_stek_a.c.o
+.PHONY : push_swap/ft_stek_a.c.o
+
+push_swap/ft_stek_a.i: push_swap/ft_stek_a.c.i
+
+.PHONY : push_swap/ft_stek_a.i
+
+# target to preprocess a source file
+push_swap/ft_stek_a.c.i:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_stek_a.c.i
+.PHONY : push_swap/ft_stek_a.c.i
+
+push_swap/ft_stek_a.s: push_swap/ft_stek_a.c.s
+
+.PHONY : push_swap/ft_stek_a.s
+
+# target to generate assembly for a file
+push_swap/ft_stek_a.c.s:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_stek_a.c.s
+.PHONY : push_swap/ft_stek_a.c.s
+
 push_swap/ft_three_sort.o: push_swap/ft_three_sort.c.o
 
 .PHONY : push_swap/ft_three_sort.o
@@ -2157,6 +2265,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ft_push_swap"
+	@echo "... checker/ft_check_operations.o"
+	@echo "... checker/ft_check_operations.i"
+	@echo "... checker/ft_check_operations.s"
+	@echo "... checker/ft_read.o"
+	@echo "... checker/ft_read.i"
+	@echo "... checker/ft_read.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -2379,6 +2493,12 @@ help:
 	@echo "... push_swap/ft_push_swap.o"
 	@echo "... push_swap/ft_push_swap.i"
 	@echo "... push_swap/ft_push_swap.s"
+	@echo "... push_swap/ft_rotate_and_reverse.o"
+	@echo "... push_swap/ft_rotate_and_reverse.i"
+	@echo "... push_swap/ft_rotate_and_reverse.s"
+	@echo "... push_swap/ft_stek_a.o"
+	@echo "... push_swap/ft_stek_a.i"
+	@echo "... push_swap/ft_stek_a.s"
 	@echo "... push_swap/ft_three_sort.o"
 	@echo "... push_swap/ft_three_sort.i"
 	@echo "... push_swap/ft_three_sort.s"

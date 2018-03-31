@@ -4,6 +4,9 @@ project(ft_push_swap)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(ft_push_swap
+        checker/ft_check_operations.c
+        checker/ft_checker.h
+        checker/ft_read.c
         libft/ft_atoi.c
         libft/ft_bzero.c
         libft/ft_char_replace.c
@@ -80,4 +83,6 @@ add_executable(ft_push_swap
         push_swap/ft_operations.c
         push_swap/ft_push_swap.c
         push_swap/ft_push_swap.h
+        push_swap/ft_rotate_and_reverse.c
+        push_swap/ft_stek_a.c
         push_swap/ft_three_sort.c)

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_check.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aryabenk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 13:51:16 by aryabenk          #+#    #+#             */
+/*   Updated: 2018/03/31 13:51:17 by aryabenk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_push_swap.h"
 
 int	ft_check_sort_arr(int *arr, int size)
@@ -5,7 +17,7 @@ int	ft_check_sort_arr(int *arr, int size)
 	int	i;
 
 	i = 0;
-	while(i + 1 < size)
+	while (i + 1 < size)
 	{
 		if (arr[i] > arr[i + 1])
 			return (0);
