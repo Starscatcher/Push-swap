@@ -25,10 +25,24 @@ void	ft_print_commands(t_push *push, char *command, char n, int len)
 	push->fin++;
 }
 
+void	ft_error_digit(char **argv, int i)
+{
+	int j;
+
+	j = 0;
+	while (argv[i][j])
+	{
+		if (!ft_isdigit(argv[i][j++]))
+		{
+			printf("Error");
+			exit(1);
+		}
+	}
+}
+
 t_stek	*ft_read_args(int argc, char **argv)
 {
 	int		i;
-	int 	j;
 	t_stek	*stek;
 	t_stek	*node;
 
@@ -37,15 +51,7 @@ t_stek	*ft_read_args(int argc, char **argv)
 	i = 1;
 	while (i != argc)
 	{
-		j = 0;
-		while (argv[i][j])
-		{
-			if (ft_isalpha(argv[i][j++]))
-			{
-				printf("Error");
-				exit(1);
-			}
-		}
+		ft_error_digit(argv, i);
 		stek->num = ft_atoi(argv[i++]);
 		if (i != argc)
 		{
@@ -57,7 +63,6 @@ t_stek	*ft_read_args(int argc, char **argv)
 	return (node);
 }
 
-
 int		main(int argc, char **argv)
 {
 	t_push	*push;
@@ -66,11 +71,10 @@ int		main(int argc, char **argv)
 
 	push = (t_push*)malloc(sizeof(t_push));
 	push->a = ft_read_args(argc, argv);
-	ft_find_error(push->a);
+	ft_error_duplicates(push->a);
 	push->b = NULL;
 	ft_sort(push);
 	ft_rewrite_commands(push);
 	fd = open("../1", O_RDWR);
 	ft_putstr_fd(push->com, fd);
-
 }

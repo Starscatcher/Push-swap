@@ -238,6 +238,10 @@ CMakeFiles/ft_push_swap.dir/push_swap/ft_push_swap.c.o: ../libft/libft.h
 CMakeFiles/ft_push_swap.dir/push_swap/ft_push_swap.c.o: ../push_swap/ft_push_swap.c
 CMakeFiles/ft_push_swap.dir/push_swap/ft_push_swap.c.o: ../push_swap/ft_push_swap.h
 
+CMakeFiles/ft_push_swap.dir/push_swap/ft_quick_sort.c.o: ../libft/libft.h
+CMakeFiles/ft_push_swap.dir/push_swap/ft_quick_sort.c.o: ../push_swap/ft_push_swap.h
+CMakeFiles/ft_push_swap.dir/push_swap/ft_quick_sort.c.o: ../push_swap/ft_quick_sort.c
+
 CMakeFiles/ft_push_swap.dir/push_swap/ft_rotate_and_reverse.c.o: ../libft/libft.h
 CMakeFiles/ft_push_swap.dir/push_swap/ft_rotate_and_reverse.c.o: ../push_swap/ft_push_swap.h
 CMakeFiles/ft_push_swap.dir/push_swap/ft_rotate_and_reverse.c.o: ../push_swap/ft_rotate_and_reverse.c

@@ -80,6 +80,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_lst.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_lst.c.o"
   "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_operations.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_operations.c.o"
   "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_push_swap.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_push_swap.c.o"
+  "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_quick_sort.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_quick_sort.c.o"
   "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_rotate_and_reverse.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_rotate_and_reverse.c.o"
   "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_stek_a.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_stek_a.c.o"
   "/Users/aryabenk/projects/ft_push_swap/push_swap/ft_three_sort.c" "/Users/aryabenk/projects/ft_push_swap/cmake-build-debug/CMakeFiles/ft_push_swap.dir/push_swap/ft_three_sort.c.o"

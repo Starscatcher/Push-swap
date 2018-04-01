@@ -12,7 +12,7 @@
 
 #include "ft_push_swap.h"
 
-int			ft_find_error(t_stek *stek)
+int			ft_error_duplicates(t_stek *stek)
 {
 	t_stek *copy;
 
@@ -89,6 +89,7 @@ int			ft_med(t_stek *stek, int num, int where)
 
 	arr = ft_make_arr(stek, where, &size);
 	med = arr[size / num];
-	ft_strdel(&arr);
+	free(arr);
+	arr = NULL;
 	return (med);
 }

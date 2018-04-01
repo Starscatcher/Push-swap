@@ -16,7 +16,6 @@ void	ft_make_commands(char *str, t_push *push)
 {
 	int x;
 
-	x = 0;
 	ft_strequ(str, "sa") ? ft_s(push, 'a', x) : 0;
 	ft_strequ(str, "sb") ? ft_s(push, 'b', x) : 0;
 	ft_strequ(str, "pa") ? ft_p(push, 'a') : 0;

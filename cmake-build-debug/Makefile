@@ -2175,6 +2175,33 @@ push_swap/ft_push_swap.c.s:
 	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_push_swap.c.s
 .PHONY : push_swap/ft_push_swap.c.s
 
+push_swap/ft_quick_sort.o: push_swap/ft_quick_sort.c.o
+
+.PHONY : push_swap/ft_quick_sort.o
+
+# target to build an object file
+push_swap/ft_quick_sort.c.o:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_quick_sort.c.o
+.PHONY : push_swap/ft_quick_sort.c.o
+
+push_swap/ft_quick_sort.i: push_swap/ft_quick_sort.c.i
+
+.PHONY : push_swap/ft_quick_sort.i
+
+# target to preprocess a source file
+push_swap/ft_quick_sort.c.i:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_quick_sort.c.i
+.PHONY : push_swap/ft_quick_sort.c.i
+
+push_swap/ft_quick_sort.s: push_swap/ft_quick_sort.c.s
+
+.PHONY : push_swap/ft_quick_sort.s
+
+# target to generate assembly for a file
+push_swap/ft_quick_sort.c.s:
+	$(MAKE) -f CMakeFiles/ft_push_swap.dir/build.make CMakeFiles/ft_push_swap.dir/push_swap/ft_quick_sort.c.s
+.PHONY : push_swap/ft_quick_sort.c.s
+
 push_swap/ft_rotate_and_reverse.o: push_swap/ft_rotate_and_reverse.c.o
 
 .PHONY : push_swap/ft_rotate_and_reverse.o
@@ -2493,6 +2520,9 @@ help:
 	@echo "... push_swap/ft_push_swap.o"
 	@echo "... push_swap/ft_push_swap.i"
 	@echo "... push_swap/ft_push_swap.s"
+	@echo "... push_swap/ft_quick_sort.o"
+	@echo "... push_swap/ft_quick_sort.i"
+	@echo "... push_swap/ft_quick_sort.s"
 	@echo "... push_swap/ft_rotate_and_reverse.o"
 	@echo "... push_swap/ft_rotate_and_reverse.i"
 	@echo "... push_swap/ft_rotate_and_reverse.s"

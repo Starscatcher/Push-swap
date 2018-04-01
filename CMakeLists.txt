@@ -85,4 +85,4 @@ add_executable(ft_push_swap
         push_swap/ft_push_swap.h
         push_swap/ft_rotate_and_reverse.c
         push_swap/ft_stek_a.c
-        push_swap/ft_three_sort.c)
+        push_swap/ft_three_sort.c push_swap/ft_quick_sort.c)

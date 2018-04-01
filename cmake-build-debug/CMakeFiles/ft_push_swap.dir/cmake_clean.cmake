@@ -78,6 +78,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_push_swap.dir/push_swap/ft_rotate_and_reverse.c.o"
   "CMakeFiles/ft_push_swap.dir/push_swap/ft_stek_a.c.o"
   "CMakeFiles/ft_push_swap.dir/push_swap/ft_three_sort.c.o"
+  "CMakeFiles/ft_push_swap.dir/push_swap/ft_quick_sort.c.o"
   "ft_push_swap.pdb"
   "ft_push_swap"
 )

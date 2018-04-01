@@ -340,6 +340,10 @@ stdio.h
 ../libft/libft.h
 /Users/aryabenk/projects/ft_push_swap/libft/libft.h
 
+/Users/aryabenk/projects/ft_push_swap/push_swap/ft_quick_sort.c
+ft_push_swap.h
+/Users/aryabenk/projects/ft_push_swap/push_swap/ft_push_swap.h
+
 /Users/aryabenk/projects/ft_push_swap/push_swap/ft_rotate_and_reverse.c
 ft_push_swap.h
 /Users/aryabenk/projects/ft_push_swap/push_swap/ft_push_swap.h

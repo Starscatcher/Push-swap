@@ -45,7 +45,7 @@ t_stek				*ft_del_first(t_stek *stek);
 t_stek				*ft_read_args(int argc, char **argv);
 t_stek				*ft_makelst(void);
 t_count				*ft_make_count(void);
-int					ft_find_error(t_stek *stek);
+int					ft_error_duplicates(t_stek *stek);
 void				ft_print_commands(t_push *push, char *co, char n, int len);
 void				ft_rewrite_commands(t_push *push);
 int					ft_less_than_mad(t_stek *stek, int med);
