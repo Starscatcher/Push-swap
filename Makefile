@@ -10,52 +10,42 @@
 #                                                                              #
 #******************************************************************************#
 
-NAME =	libftprintf.a
+NAME_CH = checker
 
-CC = gcc
+NAME_PS = push_swap
 
-FLAGS =	 -Wall -Werror -Wextra
+SRC_PS = ./ft_push_swap/ft_check.c ./ft_push_swap/ft_check_commands.c \
+            ./ft_push_swap/ft_find_med.c ./ft_push_swap/ft_heart.c \
+            ./ft_push_swap/ft_lst.c ./ft_push_swap/ft_operations.c \
+            ./ft_push_swap/ft_push_swap.c ./ft_push_swap/ft_stek_a.c \
+            ./ft_push_swap/ft_three_sort.c ./ft_push_swap/ft_rotate_and_reverse.c \
+            ./ft_push_swap/ft_start.c
 
-LIB_DIR = ./libft
+SRC_CH = ./ft_checker/ft_check_operations.c ./ft_checker/ft_read.c \
+            ./ft_push_swap/ft_check.c ./ft_push_swap/ft_operations.c \
+            ./ft_push_swap/ft_lst.c ./ft_push_swap/ft_push_swap.c \
+            ./ft_push_swap/ft_find_med.c
 
-PRF_DIR = ./push_swap
+MLIB = make -C libftprintf
 
-LIB_SRC = 	ft_atoi.o ft_bzero.o ft_isalnum.o ft_isalpha.o ft_isascii.o \
-			ft_isdigit.o ft_isprint.o ft_itoa.o ft_lstadd.o ft_lstdel.o \
-			ft_lstdelone.o ft_lstiter.o ft_lstlen.o ft_lstmap.o ft_lstnew.o \
-			ft_lstput.o ft_lstswap.o ft_memalloc.o ft_memccpy.o ft_memchr.o \
-			ft_memcmp.o ft_memcpy.o ft_memdel.o ft_memmove.o ft_memset.o \
-			ft_putchar.o ft_putchar_fd.o ft_putendl.o ft_putendl_fd.o \
-			ft_putnbr.o ft_putnbr_fd.o ft_putstr.o ft_putstr_fd.o ft_realloc.o \
-			ft_strcat.o ft_strchr.o ft_strclr.o ft_strcmp.o ft_strcpy.o \
-			ft_strdel.o ft_strdup.o ft_strequ.o ft_striter.o ft_striteri.o \
-			ft_strjoin.o ft_strlcat.o ft_strlen.o ft_strmap.o ft_strmapi.o \
-			ft_strncat.o ft_strncmp.o ft_strncpy.o ft_strnequ.o ft_strnew.o \
-			ft_strnstr.o ft_strrchr.o ft_strsplit.o ft_strstr.o ft_strsub.o \
-			ft_strtrim.o ft_swap.o ft_tolower.o ft_toupper.o get_next_line.o \
+LIB = libftprintf/libftprintf.a
 
-PRF_SRC = 	ft_charmod.o ft_create_struct.o ft_float.o ft_intmod.o ft_itoa_base.o \
-			ft_modify.o ft_print_unicode.o ft_printf.o ft_read_args.o ft_read_flags.o \
-			ft_unicode.o ft_float_size.o ft_colour.o
+all: $(NAME_CH) $(NAME_PS)
 
-COMPILED =	$(LIB_SRC) $(PRF_SRC)
+$(NAME_CH): $(SRC_CH)
+	$(MLIB)
+	gcc -Wall -Wextra -Werror $(SRC_CH) $(LIB) -o $(NAME_CH)
 
-all: $(NAME)
-
-$(NAME): $(COMPILED)
-	ar rc $(NAME) $(COMPILED)
-	ranlib $(NAME)
-
-$(LIB_SRC): %.o: $(LIB_DIR)/%.c
-	$(CC) -c $(FLAGS) -I $(LIB_DIR) $< -o $@
-
-$(PRF_SRC): %.o: $(PRF_DIR)/%.c
-	$(CC) -c $(FLAGS) -I $(PRF_DIR) $< -o $@
+$(NAME_PS): $(SRC_PS)
+	$(MLIB)
+	gcc -Wall -Wextra -Werror $(SRC_PS) $(LIB) -o $(NAME_PS)
 
 clean:
-	-/bin/rm -f $(COMPILED)
+	rm -f $(OBJ)
+	$(MLIB) clean
 
 fclean: clean
-	-/bin/rm -f $(NAME)
+	rm -f $(NAME_PS) $(NAME_CH)
+	$(MLIB) fclean
 
 re: fclean all
