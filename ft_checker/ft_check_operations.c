@@ -12,7 +12,7 @@
 
 #include "ft_checker.h"
 
-void	ft_p(t_push *push, char n)
+int	ft_p(t_push *push, char n)
 {
 	if (n == 'a' && push->b)
 	{
@@ -38,9 +38,10 @@ void	ft_p(t_push *push, char n)
 		push->b->num = push->a->num;
 		push->a = ft_del_first(push->a);
 	}
+	return (1);
 }
 
-void	ft_s(t_push *push, char n, int x)
+int	ft_s(t_push *push, char n, int x)
 {
 	if (n == 'a' && push->a && push->a->next)
 	{
@@ -54,9 +55,10 @@ void	ft_s(t_push *push, char n, int x)
 		push->b->num = push->b->next->num;
 		push->b->next->num = x;
 	}
+	return (1);
 }
 
-void	ft_r(t_push *push, char n, int x)
+int	ft_r(t_push *push, char n, int x)
 {
 	if (n == 'a' && push->a && push->a->next)
 	{
@@ -82,9 +84,10 @@ void	ft_r(t_push *push, char n, int x)
 		while (push->b->prev)
 			push->b = push->b->prev;
 	}
+	return (1);
 }
 
-void	ft_rr(t_push *push, char n, int x)
+int	ft_rr(t_push *push, char n, int x)
 {
 	if (n == 'a' && push->a && push->a->next)
 	{
@@ -110,4 +113,5 @@ void	ft_rr(t_push *push, char n, int x)
 		}
 		push->b->num = x;
 	}
+	return (1);
 }

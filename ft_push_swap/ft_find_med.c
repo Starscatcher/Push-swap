@@ -12,31 +12,17 @@
 
 #include "ft_push_swap.h"
 
-int			ft_error_duplicates(t_stek *stek)
+int			ft_new_med(int *med, t_push *push)
 {
-	t_stek *copy;
-
-	while (stek)
-	{
-		copy = stek->next;
-		while (copy)
-		{
-			if (copy->num == stek->num)
-			{
-				printf("Error\n");
-				exit(1);
-			}
-			copy = copy->next;
-		}
-		stek = stek->next;
-	}
-	return (0);
+	ft_new_count(push);
+	*med = ft_med(push->a, 2, 0);
+	return (1);
 }
 
-static	int	*ft_sort_arr(int *arr, int size)
+static int	*ft_sort_arr(int *arr, int size)
 {
-	int	swap;
-	int	i;
+	int swap;
+	int i;
 
 	i = 0;
 	while (!ft_check_sort_arr(arr, size))
@@ -54,16 +40,16 @@ static	int	*ft_sort_arr(int *arr, int size)
 	return (arr);
 }
 
-static	int	*ft_make_arr(t_stek *stek, int where, int *size)
+static int	*ft_make_arr(t_stek *stek, int where, int *size)
 {
-	int	*arr;
-	int	i;
+	int *arr;
+	int i;
 	int len;
 
 	i = 0;
 	len = !where ? ft_stek_len(stek) : where;
 	*size = len;
-	arr = (int*)malloc(sizeof(int) * *size);
+	arr = (int *)malloc(sizeof(int) * *size);
 	while (stek && len > 0)
 	{
 		arr[i++] = stek->num;
@@ -72,13 +58,6 @@ static	int	*ft_make_arr(t_stek *stek, int where, int *size)
 	}
 	arr = ft_sort_arr(arr, *size);
 	return (arr);
-}
-
-int			ft_new_med(int *med, t_push *push)
-{
-	ft_new_count(push);
-	*med = ft_med(push->a, 2, 0);
-	return (1);
 }
 
 int			ft_med(t_stek *stek, int num, int where)

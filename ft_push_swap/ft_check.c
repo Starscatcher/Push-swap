@@ -12,17 +12,6 @@
 
 #include "ft_push_swap.h"
 
-int	ft_is_int(char **argv, int i)
-{
-	ssize_t	num;
-
-	num = ft_atoi(argv[i]);
-	if (num >= -2147483648 && num <= 2147483647)
-		return (1);
-	else
-		return (0);
-}
-
 int	ft_check_sort_arr(int *arr, int size)
 {
 	int	i;

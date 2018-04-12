@@ -12,7 +12,7 @@
 
 #include "ft_push_swap.h"
 
-int		ft_while_less_than_mad(t_push *push, int med, int pa)
+static int	ft_while_less_than_mad(t_push *push, int med, int pa)
 {
 	while (!ft_less_than_mad(push->b, med))
 	{
@@ -31,7 +31,7 @@ int		ft_while_less_than_mad(t_push *push, int med, int pa)
 	return (pa);
 }
 
-void	ft_if_rb(t_push *push)
+static void	ft_if_rb(t_push *push)
 {
 	if (push->count && push->count->rb)
 	{
@@ -43,7 +43,7 @@ void	ft_if_rb(t_push *push)
 	}
 }
 
-int		ft_while_more_than_mad(t_push *push, int *med, int *pa, int *pb)
+static int	ft_while_more_than_mad(t_push *push, int *med, int *pa, int *pb)
 {
 	int ra;
 
@@ -65,7 +65,7 @@ int		ft_while_more_than_mad(t_push *push, int *med, int *pa, int *pb)
 	return (ra);
 }
 
-int		ft_while_ra(t_push *push, int ra)
+static int	ft_while_ra(t_push *push, int ra)
 {
 	while (ra > 0)
 	{
@@ -75,7 +75,7 @@ int		ft_while_ra(t_push *push, int ra)
 	return (ra);
 }
 
-void	ft_push_a(t_push *push, int med)
+void		ft_push_a(t_push *push, int med)
 {
 	int pa;
 	int ra;

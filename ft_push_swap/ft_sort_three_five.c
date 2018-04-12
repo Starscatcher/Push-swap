@@ -12,7 +12,7 @@
 
 #include "ft_push_swap.h"
 
-int		ft_num(t_stek *stek, int index)
+static int	ft_num(t_stek *stek, int index)
 {
 	int i;
 
@@ -31,7 +31,7 @@ int		ft_num(t_stek *stek, int index)
 	return (stek->num);
 }
 
-void	ft_sort_three(t_push *push)
+void		ft_sort_three(t_push *push)
 {
 	while (!ft_check_sort_lst(push->a))
 	{
@@ -47,7 +47,7 @@ void	ft_sort_three(t_push *push)
 	!ft_check_sort_lst(push->a) ? ft_pswap(push, 'a') : 0;
 }
 
-void	ft_sort_up_three(t_push *push)
+void		ft_sort_up_three(t_push *push)
 {
 	while (!ft_check_sort_lst(push->a))
 	{
@@ -67,4 +67,44 @@ void	ft_sort_up_three(t_push *push)
 			ft_pswap(push, 'a');
 		}
 	}
+}
+
+static	int	ft_find_less(t_stek *stek, int med)
+{
+	int little;
+	int k;
+
+	k = 0;
+	if (stek->num < med && stek->num < stek->next->num)
+		little = stek->num;
+	else if (stek->next->num < med && stek->next->num < stek->num)
+	{
+		little = stek->next->num;
+		k++;
+	}
+	while (stek->next)
+		stek = stek->next;
+	if (stek->num < little && stek->num < med)
+		return (2);
+	else
+		return (k);
+}
+
+void		ft_sort_five(t_push *push, int med)
+{
+	while (!ft_more_then_med(push->a, med) && !ft_check_sort_lst(push->a))
+	{
+		if (ft_find_less(push->a, med) == 2)
+			ft_reverse_rotate(push, 'a');
+		if (push->a->num < med)
+			ft_push(push, 'b');
+		else if (push->a->num >= med)
+			ft_rotate(push, 'a');
+	}
+	if (ft_stek_len(push->a) == 3)
+		ft_sort_three(push);
+	if (push->b->num < push->b->next->num)
+		ft_pswap(push, 'b');
+	while (push->b)
+		ft_push(push, 'a');
 }

@@ -12,35 +12,6 @@
 
 #include "ft_push_swap.h"
 
-void	ft_stek_del(t_push *push)
-{
-	t_stek *copy;
-
-	if (push->com)
-		ft_strdel(&push->com);
-	if (push->count)
-		free(push->count);
-	if (push->a)
-	{
-		while (push->a)
-		{
-			copy = push->a->next;
-			free(push->a);
-			push->a = copy;
-		}
-	}
-	if (push->b)
-	{
-		while (push->b)
-		{
-			copy = push->b->next;
-			free(push->b);
-			push->b = copy;
-		}
-	}
-	free(push);
-}
-
 size_t	ft_stek_len(t_stek *stek)
 {
 	size_t count;

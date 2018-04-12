@@ -12,17 +12,20 @@
 
 #include "ft_push_swap.h"
 
-int		main(int argc, char **argv)
+/*int		main(int argc, char **argv)
 {
 	t_push	*push;
 
 	push = (t_push*)malloc(sizeof(t_push));
-	push->a = ft_read_args(argc, argv);
-	ft_error_duplicates(push->a);
+	push->a = NULL;
 	push->b = NULL;
+	push->count = NULL;
+	push->com = NULL;
+	push->a = ft_read_args(argc, argv);
+	ft_error_duplicates(push->a, push);
 	ft_sort(push);
 	ft_rewrite_commands(push);
-	ft_putstr(push->com);
+	int fd = open("../1", O_RDWR);
+	ft_putstr_fd(push->com, fd);
 	ft_stek_del(push);
-	system("leaks ft_push_swap");
-}
+}*/

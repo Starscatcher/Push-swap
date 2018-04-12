@@ -1,0 +1,55 @@
+
+#include "ft_checker.h"
+
+t_push		*ft_create_push(t_push *push)
+{
+	push = (t_push*)malloc(sizeof(t_push));
+	push->a = NULL;
+	push->b = NULL;
+	push->count = NULL;
+	push->com = NULL;
+	return (push);
+}
+
+int		ft_read_and_print(t_option *option, char *str, t_push *push, int commands)
+{
+	int fd = open("../1", O_RDWR);
+
+	ft_printf("\n{sea wave}Start{eoc}\n\n");
+	ft_push_print(option, str, push);
+	ft_printf("\n");
+	while (get_next_line(fd, &str))
+	{
+		ft_make_commands(str, push, option);
+		option && option->v ? ft_push_print(option, str, push) : 0;
+		ft_strdel(&str);
+		commands++;
+	}
+	ft_printf("{sea wave}Final{eoc}\n\n");
+	ft_push_print(option, str, push);
+	return (commands);
+}
+
+int			main(int argc, char **argv)
+{
+	char		*str;
+	t_push		*push;
+	int			len;
+	int			commands;
+	t_option	*option;
+
+	push = NULL;
+	option = NULL;
+	push = ft_create_push(push);
+	option = ft_create_option(option);
+	argv = ft_find_option(&argc, argv, option);
+	push->a = ft_read_args(argc, argv);
+	len = ft_stek_len(push->a);
+	ft_error_duplicates(push->a, push);
+	commands = ft_read_and_print(option, str, push, 0);
+	option->l ? ft_printf("Length of stack is {sea wave}%d{eoc}.\n\n", len) : 0;
+	option && option->n ? ft_printf("Number of commands is {sea wave}%d{eoc}.\n\n", commands) : 0;
+	ft_check_sort_lst(push->a) && !push->b ? ft_putstr("OK\n") : ft_putstr("KO\n");
+	if (option)
+		free(option);
+}

@@ -12,50 +12,15 @@
 
 #include "ft_push_swap.h"
 
-void	ft_print_commands(t_push *push, char *command, char n, int len)
-{
-	char *arr;
-
-	arr = ft_strnew(2);
-	arr[0] = n;
-	arr[1] = '\n';
-	push->com = ft_realloc(push->com, ft_strlen(push->com) + len);
-	push->com = ft_strcat(push->com, command);
-	push->com = ft_strcat(push->com, arr);
-	ft_strdel(&arr);
-}
-
-void	ft_error_digit(char **argv, int i)
-{
-	int j;
-
-	j = 0;
-	if (argv[i][j] == '-')
-		j++;
-	while (argv[i][j])
-	{
-		if (!ft_isdigit(argv[i][j]))
-		{
-			ft_putstr("Error\n");
-			exit(1);
-		}
-		j++;
-	}
-}
-
 t_stek	*ft_help_read(char **argv, t_stek *stek)
 {
 	int i;
 
 	i = 0;
-	while (argv[i])
+	while (argv && argv[i])
 	{
 		ft_error_digit(argv, i);
-		if (!ft_is_int(argv, i))
-		{
-			ft_putstr("Error\n");
-			exit(1);
-		}
+		ft_error_int(argv, i);
 		stek->num = ft_atoi(argv[i]);
 		if (argv[i + 1])
 		{
@@ -66,6 +31,20 @@ t_stek	*ft_help_read(char **argv, t_stek *stek)
 		i++;
 	}
 	return (stek);
+}
+
+void	ft_free_args(char **arguments)
+{
+	int i;
+	int j;
+
+	i = 0;
+	while (arguments && arguments[i])
+	{
+		free(arguments[i]);
+		i++;
+	}
+	free(arguments);
 }
 
 t_stek	*ft_read_args(int argc, char **argv)
@@ -90,6 +69,7 @@ t_stek	*ft_read_args(int argc, char **argv)
 			stek->next->prev = stek;
 			stek = stek->next;
 		}
+		ft_free_args(arguments);
 	}
 	return (node);
 }
