@@ -19,10 +19,8 @@ static void	ft_commands_error(t_push *push)
 	exit(1);
 }
 
-void		ft_make_commands(char *str, t_push *push, t_option *option)
+void		ft_make_commands(char *str, t_push *push, int error)
 {
-	int error;
-
 	error = ft_strequ(str, "sa") ? ft_s(push, 'a', 0) : 0;
 	error += ft_strequ(str, "sb") ? ft_s(push, 'b', 0) : 0;
 	error += ft_strequ(str, "pa") ? ft_p(push, 'a') : 0;

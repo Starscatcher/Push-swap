@@ -17,7 +17,7 @@ int	ft_check_sort_arr(int *arr, int size)
 	int	i;
 
 	i = 0;
-	while (arr[i] && i + 1 < size)
+	while (arr && i + 1 < size)
 	{
 		if (arr[i] > arr[i + 1])
 			return (0);

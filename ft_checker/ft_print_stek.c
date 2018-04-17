@@ -29,13 +29,28 @@ void	ft_print_elem(t_stek *stek, int on)
 
 void	ft_push_print(t_option *option, char *str, t_push *push)
 {
-	if (option->c && str)
-		ft_commands_in_colour(option, str, push);
+	char	com;
+
+	com = ft_find_command(str);
+	if ((option->c) && str)
+		ft_commandsincol(option, str, push, 0);
 	else
 	{
-		ft_printf(" [ a ] | ");
+		ft_printf(" [ a ] ");
+		if (option->k && (com == 'a' || com == 't'))
+			ft_print_command(str);
+		else if (option->k)
+			ft_printf("      | ");
+		else
+			ft_printf("| ");
 		ft_print_elem(push->a, 0);
-		ft_printf(" [ b ] | ");
+		ft_printf(" [ b ] ");
+		if (option->k && (com == 'b' || com == 't'))
+			ft_print_command(str);
+		else if (option->k)
+			ft_printf("      | ");
+		else
+			ft_printf("| ");
 		ft_print_elem(push->b, 0);
 		ft_printf("\n");
 	}

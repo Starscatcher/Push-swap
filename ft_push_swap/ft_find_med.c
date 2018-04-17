@@ -47,7 +47,7 @@ static int	*ft_make_arr(t_stek *stek, int where, int *size)
 	int len;
 
 	i = 0;
-	len = !where ? ft_stek_len(stek) : where;
+	len = where <= 0 ? ft_stek_len(stek) : where;
 	*size = len;
 	arr = (int *)malloc(sizeof(int) * *size);
 	while (stek && len > 0)
@@ -69,6 +69,5 @@ int			ft_med(t_stek *stek, int num, int where)
 	arr = ft_make_arr(stek, where, &size);
 	med = arr[size / num];
 	free(arr);
-	*arr = NULL;
 	return (med);
 }

@@ -22,29 +22,27 @@ t_push		*ft_create_push(t_push *push)
 	return (push);
 }
 
-int			ft_read_and_print(t_option *option, char *str, t_push *push, int com)
+int			ft_read_and_print(t_option *option, char *str, t_push *push, int c)
 {
-	int fd = open("../1", O_RDWR);
-
 	if (option->v)
 	{
 		ft_printf("\n{sea wave}Start{eoc}\n\n");
 		ft_push_print(option, str, push);
 		ft_printf("\n");
 	}
-	while (get_next_line(fd, &str))
+	while (get_next_line(0, &str))
 	{
-		ft_make_commands(str, push, option);
+		ft_make_commands(str, push, 0);
 		option && option->v ? ft_push_print(option, str, push) : 0;
 		ft_strdel(&str);
-		com++;
+		c++;
 	}
 	if (option->v)
 	{
 		ft_printf("{sea wave}Final{eoc}\n\n");
 		ft_push_print(option, str, push);
 	}
-	return (com);
+	return (c);
 }
 
 void		ft_is_correct(t_push *push)
@@ -63,6 +61,7 @@ int			main(int argc, char **argv)
 	int			commands;
 	t_option	*option;
 
+	str = NULL;
 	push = NULL;
 	option = NULL;
 	push = ft_create_push(push);

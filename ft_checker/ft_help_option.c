@@ -33,5 +33,5 @@ void	ft_op_help(t_option *option, t_push *push)
 	ft_printf("|           {green}rotate{eoc}                       |\n");
 	ft_printf("|           {yellow}reverse rotate{eoc}               |\n");
 	ft_printf("|________________________________________|\n");
-	exit (0);
+	exit(0);
 }

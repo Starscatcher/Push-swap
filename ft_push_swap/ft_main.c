@@ -12,7 +12,7 @@
 
 #include "ft_push_swap.h"
 
-/*int		main(int argc, char **argv)
+int		main(int argc, char **argv)
 {
 	t_push	*push;
 
@@ -25,7 +25,6 @@
 	ft_error_duplicates(push->a, push);
 	ft_sort(push);
 	ft_rewrite_commands(push);
-	int fd = open("../1", O_RDWR);
-	ft_putstr_fd(push->com, fd);
+	ft_putstr(push->com);
 	ft_stek_del(push);
-}*/
+}

@@ -36,7 +36,6 @@ t_stek	*ft_help_read(char **argv, t_stek *stek)
 void	ft_free_args(char **arguments)
 {
 	int i;
-	int j;
 
 	i = 0;
 	while (arguments && arguments[i])
@@ -55,8 +54,9 @@ t_stek	*ft_read_args(int argc, char **argv)
 	t_stek	*node;
 
 	stek = ft_makelst();
+	argc == 1 ? free(stek) : 0;
 	if (argc == 1)
-		exit(1);
+		exit(0);
 	node = stek;
 	i = 1;
 	while (i < argc)

@@ -74,6 +74,8 @@ void	ft_pswap(t_push *push, char n)
 		r = push->b->num;
 		push->b->num = push->b->next->num;
 		push->b->next->num = r;
+		if (push->a && push->a->next && push->a->num > push->a->next->num)
+			ft_pswap(push, 'b');
 	}
 	ft_print_commands(push, "s", n, 3);
 }
