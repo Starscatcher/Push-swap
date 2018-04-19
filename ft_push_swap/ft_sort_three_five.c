@@ -113,8 +113,9 @@ void		ft_sort_five(t_push *push, int med)
 	}
 	if (ft_stek_len(push->a) == 3)
 		ft_sort_three(push);
-	if (push->b->num < push->b->next->num)
+	if (push->b && push->b->next && push->b->num < push->b->next->num)
 		ft_rotate(push, 'b');
 	while (push->b)
 		ft_push(push, 'a');
+	ft_sort_up_three(push);
 }

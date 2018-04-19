@@ -56,7 +56,7 @@ int		ft_error_duplicates(t_stek *stek, t_push *push)
 			if (copy->num == stek->num)
 			{
 				ft_stek_del(push);
-				printf("Error\n");
+				ft_putstr("Error\n");
 				exit(1);
 			}
 			copy = copy->next;

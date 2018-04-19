@@ -15,7 +15,6 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
 # include "../ft_push_swap/ft_push_swap.h"
 
 typedef struct		s_option

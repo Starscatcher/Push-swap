@@ -21,7 +21,7 @@ int		ft_sort(t_push *push)
 	secmed = ft_med(push->a, 4, 0);
 	push->com = ft_strdup("");
 	push->count = ft_make_count();
-	if (ft_stek_len(push->a) == 1)
+	if (ft_stek_len(push->a) == 1 || ft_check_sort_lst(push->a))
 		return (1);
 	if (ft_stek_len(push->a) <= 3)
 		ft_sort_three(push);

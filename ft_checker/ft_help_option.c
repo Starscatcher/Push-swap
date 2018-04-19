@@ -6,7 +6,7 @@
 /*   By: aryabenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/12 16:47:31 by aryabenk          #+#    #+#             */
-/*   Updated: 2018/04/12 16:47:32 by aryabenk         ###   ########.fr       */
+/*   Updated: 2018/04/18 13:39:51 by aryabenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ void	ft_op_help(t_option *option, t_push *push)
 	ft_printf("|                                        |\n");
 	ft_printf("|  {sea wave}[ -l ]{eoc}   length of stack              |\n");
 	ft_printf("|  {sea wave}[ -n ]{eoc}   number of commands           |\n");
-	ft_printf("|  {sea wave}[ -v ]{eoc}   visualisation                |\n");
+	ft_printf("|  {sea wave}[ -v ]{eoc}   visualization                |\n");
 	ft_printf("|  {sea wave}[ -c ]{eoc}   colour visualization         |\n");
-	ft_printf("|  {sea wave}[ -k ]{eoc}   visualisation with commands  |\n");
+	ft_printf("|  {sea wave}[ -k ]{eoc}   visualization with commands  |\n");
 	ft_printf("|                                        |\n");
 	ft_printf("|           {blue}push{eoc}                         |\n");
 	ft_printf("|           {violet}swap{eoc}                         |\n");

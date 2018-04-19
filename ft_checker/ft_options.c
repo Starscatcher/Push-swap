@@ -51,9 +51,11 @@ int			ft_is_option(char f, char s)
 char		**ft_find_option(int *argc, char **argv, t_option *option)
 {
 	int i;
+	int k;
 
+	k = *argc;
 	i = 1;
-	while (i < *argc && ft_is_option(argv[i][0], argv[i][1]) && !argv[i][2])
+	while (i < k && ft_is_option(argv[i][0], argv[i][1]) && !argv[i][2])
 	{
 		option->c += argv[i][1] == 'c' ? 1 : 0;
 		option->n += argv[i][1] == 'n' ? 1 : 0;
@@ -64,5 +66,6 @@ char		**ft_find_option(int *argc, char **argv, t_option *option)
 		i++;
 		--*argc;
 	}
-	return (argv + i - 1);
+	i--;
+	return (argv + i);
 }
