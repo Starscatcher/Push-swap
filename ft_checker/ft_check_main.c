@@ -67,11 +67,11 @@ int			main(int argc, char **argv)
 	push = ft_create_push(push);
 	option = ft_create_option(option);
 	argv = ft_find_option(&argc, argv, option);
+	if (option->h)
+		ft_op_help(option, push);
 	push->a = ft_read_args(argc, argv);
 	len = ft_stek_len(push->a);
 	ft_error_duplicates(push->a, push);
-	if (option->h)
-		ft_op_help(option, push);
 	commands = ft_read_and_print(option, str, push, 0);
 	if (option->l)
 		ft_printf("Length of stack is {sea wave}%d{eoc}.\n\n", len);
